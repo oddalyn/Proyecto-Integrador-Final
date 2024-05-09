@@ -6,9 +6,10 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Nebula</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +35,67 @@
       </nav>
 </header>
 <body>   
-    <div class="" id="container-inicio" >
-        <div class="container">
-            <h1>Nebula</h1>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae neque atque, officia, deleniti, enim repudiandae maxime porro aspernatur dolorem laboriosam voluptates accusantium aliquid? Dolorem blanditiis saepe deleniti laborum neque!</p>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+  Launch demo modal
+</button> -->
+
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="../img/Nebula1.jpg" alt="ImagenPrincipal">
+
+    <div class="color2" id="container-inicio" >
+        <div class="container">
+            <h1 class="font1">PROCESO DE TRANSFORMACIÓN PERSONAL</h1>
+            <p>La astrología nos guía hacia un trabajo profundo y personal de encontrarnos con nuestra conciencia. </p>
+        </div>
+    </div>
+    <div>
+      <h2>¿Cuál es tu superpoder?</h2>
+      <p>La carta natal es una representación gráfica del sistema solar respecto a un lugar específico en la tierra. </p>
+      <p>Nos muestra el modo en el que nace alguien en un tiempo y espacio. Nos sirve de <p>guía</p> sobre el tipo de camino de vida que tendremos por delante.</p>
+    </div>
+    <!-- Servicios -->
+    <div>
+      
+    </div>
+    <!-- Testimonios -->
+    <div>
+      
+    </div>
+    <!-- Formulario de contacto -->
+    <div>
+      <h2>Sumáte a nuestra comunidad</h2>
+      <h4>Recibí promociones y noticias exclusivas</h4>
+      <div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit">Suscribirme</button>
+        </div>
+      </div>
     </div>
 </body>
 <footer class="py-3 my-4">
@@ -57,7 +114,9 @@
                 <a href="" class="nav-link px-2 text-body-secondary">Aprende Astrología</a>
             </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-body-secondary">© 2024 NEBULA, TODOS LOS DERECHOS RESERVADOS</p>
     </div>
 </footer>
 </html>
+
+<script src="index.js"></script>
