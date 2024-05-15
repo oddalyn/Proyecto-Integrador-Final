@@ -6,16 +6,20 @@ body{
     font-size: 15px;
 }
 
-@media screen and (height > 900px){
-    body{
-      
-    }
-}
+
 
 .navbar{
     text-align: right;
     background-color: #EFE1D1;
 }
+
+footer{
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+
+}
+
 
 #footer-container { 
     background-color: #141414;
@@ -69,11 +73,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(180deg, rgba(239,225,209,1) 0%, rgba(167,130,149,1) 45%, rgba(20,20,20,1) 74%);
 }
 
 #title{
     position: absolute;
-    font-size: 5em;
+    font-size: 8em;
     color: #EFE1D1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
@@ -138,5 +143,56 @@ body{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    
  }
+
+
+ #frase{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    align-items: center;
+ }
+
+ #ondaOscura{
+    margin-left: -1rem;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding: 0%;
+    position: absolute;
+ }
+
+ #ondaClara{
+    /* position: absolute; */
+
+    object-fit: cover;
+    margin-bottom: 10rem;
+    padding-bottom: 0%;
+    padding: 0%;
+    margin-right: 12rem;
+
+
+ }
+
+#onda{
+    transform: rotate(180deg);
+}
+
+.contenedor{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+.cartaNatal{
+    background-color: #3F2E3E;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
