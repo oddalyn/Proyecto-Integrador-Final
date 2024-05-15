@@ -78,6 +78,13 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
+#title2{
+    position: relative;
+    font-size: 2em;
+    color: #A78295;
+}
+
+
 .parallax img{
     position: absolute;
     top: 0;
@@ -89,9 +96,47 @@ body{
 .sec2{
     background-color: #141414;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.sec2 h1{
-    font-size: 2rem;
-    margin-bottom: 10px;
+.contenedorPrincipal{
+    width: 40vw;
 }
+
+.contenedorPrincipal p{
+    color: #EFE1D1;
+}
+
+.sec3{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorImg{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.contenedorImg img {
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 150px;
+    
+  }
+
+ .articulos{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+ }
