@@ -6,26 +6,32 @@ body{
     font-size: 15px;
 }
 
+.nav-link{
+    color: #331D2C;
 
+}
 
-.navbar{
-    text-align: right;
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
     background-color: #EFE1D1;
 }
 
 footer{
     background-color: #141414;
+    display: block;
+}
+
+#contenedorFooter{
     display: flex;
     justify-content: center;
-
 }
+
 
 
 #footer-container { 
     background-color: #141414;
     width: 100%;
-    position: absolute;
-    height: 20%;
 }
 
 
@@ -62,9 +68,24 @@ footer{
     color: #EFE1D1;
 }
 
+.nav-link {
+   padding-right: 2rem;
+}
+
+li:hover:after {
+    opacity: 1;
+    }
+    
+
+
 .nav-item a:hover, .nav-item a.active {
     background-color: #331D2C;
     color: #EFE1D1;
+    border-radius: 25px;
+    padding: auto;
+    text-decoration: none;
+    font-weight: 600;
+
 }  
 
 .parallax{
@@ -77,7 +98,7 @@ footer{
 }
 
 #title{
-    position: absolute;
+    position: fixed;
     font-size: 8em;
     color: #EFE1D1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
@@ -147,7 +168,7 @@ footer{
 
 
  #frase{
-    height: 80vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -156,11 +177,24 @@ footer{
  }
 
  #ondaOscura{
-    margin-left: -1rem;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    padding: 0%;
-    position: absolute;
+    background: url(/img/Ondaoscura.png) ;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    margin-top: -120px;
+    background-position: center top;
+    background-size: 100% 1200px;
+    
+ }
+
+ .contenedorClaro{
+    background: url(/img/Ondaclara.png) ;
+    min-height: 100%;
+    width: 100%;
+    margin-top: -900px;
+    background-repeat: no-repeat;
+    background-position:right bottom;
+
+  
  }
 
  #ondaClara{
@@ -171,6 +205,8 @@ footer{
     padding-bottom: 0%;
     padding: 0%;
     margin-right: 12rem;
+    
+    
 
 
  }
@@ -196,3 +232,4 @@ footer{
     align-items: center;
     align-content: center;
 }
+
