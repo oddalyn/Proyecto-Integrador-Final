@@ -16,17 +16,17 @@ window.addEventListener('scroll', ()=>{
     // onda.style.left = value * 1.2  + 'px' 
 })
 
-let divs  = document.querySelectorAll('div')
+let divs  = document.querySelectorAll('section')
 window.onscroll = () => {
     divs.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop;
+        let offset = sec.offsetTop - 180;
         let height = sec.offsetHeight;
 
-        if(top>=offset && top <offset + height){
+        if(top > offset && top < offset + height){
             sec.classList.add('show-animate')
         }else{
-            sec.classList.add('remove-animate')
+            sec.classList.remove('show-animate')
         }
     })
 }
