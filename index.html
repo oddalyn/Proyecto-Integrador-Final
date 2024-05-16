@@ -22,7 +22,7 @@
                 <a class=" nav-link"  href="#parallax">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#title2">Astrología</a>
+                <a class="nav-link" href="#cartaNatal">Astrología</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#servicios">Servicios</a>
@@ -42,21 +42,21 @@
       
 </header>
 <body>   
-  <!-- <section class="parallax">
+  <div class="parallax">
     <img id="luna" src="../img/luna.png" alt="">
     <img id="montania" src="../img/montania.png.png" alt="">
     <img id="nubes" src="../img/Nubes.png" alt="">
     <h2 id="title"> Nebula </h2>
     <img id="onda" src="../img/Ondaoscura.png" alt="">
-  </section> -->
+  </div>
 
 <div class="sec2">
   <div class="contenedorPrincipal">
     <div id="title2">
-      <h1>PROCESO DE TRANSFORMACIÓN PERSONAL</h1>
+      <h1 id="animate">PROCESO DE TRANSFORMACIÓN PERSONAL</h1>
     </div>
     <p>La astrología nos guía hacia un trabajo profundo y personal de encontrarnos con nuestra conciencia. </p>
-    <button>Reserva tu consulta</button>
+    <a href="#contacto" class="button">Reserva tu consulta</a>
   </div>
    
     <div id="sec3">
@@ -69,7 +69,7 @@
   <div id="ondaOscura"></div>
   <h4>"Ingrese Frase aqui"</h4>
 
-<div class="cartaNatal">
+<div id="cartaNatal">
   <div>
     <h2>¿Cuál es tu superpoder?</h2>
     <p>La carta natal es una representación gráfica del sistema solar respecto a un lugar específico en la tierra. </p>
@@ -91,7 +91,6 @@
     </div>
 
     <!-- Ultimos Articulos -->
-    
     <div id="blog">
       <h4>Últimos Artículos</h4>
       <div class="articulos">
@@ -110,31 +109,51 @@
     
     <!-- Formulario de contacto -->
     <div id="contacto">
+    
       <h2>Sumáte a nuestra comunidad</h2>
-      <h4>Recibí promociones y noticias exclusivas</h4>
-      <div>
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+      <p>Recibí promociones y noticias exclusivas</p>
+      <div class="container">
+      <div class="form-control">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name">
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+          <div class="col-md-6">
+            <label for="mail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="mail" placeholder="mail@mail.com">
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Celular" aria-label="Celular">
+          <div class="col-md-6">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password">
           </div>
-        </div>
-        <div class="row">
-          <button type="submit">Suscribirme</button>
-        </div>
+          <div class="col-12">
+            <label for="tel" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="tel">
+          </div>
+         
+          <div class="col-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="suscribe">
+              <label class="form-check-label" for="suscribe">
+                Acepto que me manden mails
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+          </div>
+        </form>
       </div>
+    </div>
     </div>
 
     <!-- Seguinos -->
-    <div>
+    <div id="redes">
       <h2>¡Seguinos!</h2>
       <ul>
         <i class="fa-brands fa-instagram"></i>
@@ -156,7 +175,7 @@
                 <a href="#parallax" class="nav-link px-2 text-body-secondary">Home</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a>
+                <a href="#cartaNatal" class="nav-link px-2 text-body-secondary">Astrología</a>
             </li>
             <li class="nav-item">
                 <a href="#servicios" class="nav-link px-2 text-body-secondary">Servicios</a>

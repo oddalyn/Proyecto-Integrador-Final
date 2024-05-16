@@ -16,15 +16,19 @@ window.addEventListener('scroll', ()=>{
     // onda.style.left = value * 1.2  + 'px' 
 })
 
-// var myModal = new bootstrap.Modal(document.getElementById('modal'), options)
-// myModal.toggle()
-// myModal.show();
+let divs  = document.querySelectorAll('div')
+window.onscroll = () => {
+    divs.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
 
-// var myModal = document.getElementById('modal')
-// var myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', function () {
-//   myInput.focus()
-// })
+        if(top>=offset && top <offset + height){
+            sec.classList.add('show-animate')
+        }else{
+            sec.classList.add('remove-animate')
+        }
+    })
+}
 
 
