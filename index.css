@@ -328,3 +328,22 @@ div .animate{
     border-style: solid;
     border-width: 2px;
 }
+
+#servicios{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#servicios img {
+    border-radius: 50%;
+     height: 200px;
+     width: 200px;
+  }
+  
+  #imgSec5{
+    background-color: #141414;
+    height: 100%;
+   
+  }
