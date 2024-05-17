@@ -66,22 +66,26 @@ footer{
 }
 
 .color1{
-    background-color: #331D2C;
+    color: #331D2C;
 }
 .color2{
-    background-color: #A78295;
+    color: #A78295;
 }
 .color3{
-    background-color: #EFE1D1;
+    color: #EFE1D1;
 }
 .color4{
-    background-color: #3F2E3E;
+    color: #3F2E3E;
 }
 
 .font1{
     font-size: 2rem;
-    color: #EFE1D1;
 }
+
+.font1{
+    font-size: 5rem;
+}
+
 
 .nav-link {
    padding-right: 2rem;
@@ -301,9 +305,26 @@ div .animate{
  color: #EFE1D1;
 }
 
+.fa-brands:hover{
+    opacity: 0.5;
+    font-size: 2rem;
+}
+
 .fa-brands{
     color: #EFE1D1;
     padding: 1rem;
     font-size: 1.5rem;
 }
 
+.footer-item .nav-item a, #footer-container{
+    color: #EFE1D1;
+}
+
+
+.form-control{
+    background-color: #EFE1D1;
+    border-color: #A78295;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+}
