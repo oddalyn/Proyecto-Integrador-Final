@@ -19,6 +19,13 @@ body{
     width: 100vw;
     background-color: #EFE1D1;
     font-size: 15px;
+    margin: 0;
+    padding: 0%;
+    justify-content: center;
+}
+
+a:hover{
+    color: #3F2E3E;
 }
 
 .nav-link{
@@ -113,7 +120,13 @@ li:hover:after {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     background: linear-gradient(180deg, rgba(239,225,209,1) 0%, rgba(167,130,149,1) 45%, rgba(20,20,20,1) 74%);
+}
+
+#contenedor-parallax{
+    width: 100%;
+    height: 100%;
 }
 
 #title{
@@ -136,7 +149,6 @@ li:hover:after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     pointer-events: none;
 }
 
@@ -147,12 +159,11 @@ li:hover:after {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+
 }
 
 .contenedorPrincipal{
-    width: 40vw;
+    /* width: 40vw; */
 }
 
 .contenedorPrincipal p{
@@ -160,12 +171,12 @@ li:hover:after {
 }
 
 .sec3{
-    display: flex;
+    display: flexbox;
     justify-content: center;
 }
 
 .contenedorImg{
-    width: 40vw;
+    /* width: 40vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +213,8 @@ li:hover:after {
     min-height: 100%;
     background-repeat: no-repeat;
     margin-top: -120px;
+    margin-bottom: 0;
+    width: 100%;
     background-position: center top;
     background-size: 100% 1200px;
     
@@ -210,10 +223,10 @@ li:hover:after {
  .contenedorClaro{
     background: url(/img/Ondaclara.png) ;
     min-height: 100%;
-    width: 100%;
     margin-top: -900px;
     background-repeat: no-repeat;
     background-position:right bottom;
+    margin-bottom: -2px;
 
   
  }
@@ -225,7 +238,7 @@ li:hover:after {
     margin-bottom: 10rem;
     padding-bottom: 0%;
     padding: 0%;
-    margin-right: 12rem;
+    
     
     
 
@@ -247,13 +260,16 @@ li:hover:after {
 
 #cartaNatal{
     background-color: #3F2E3E;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
+#cartaNatal .row{
+    padding-top: 0%;
+}
 #contacto{
 text-align: center;
 margin-top: 12rem;
@@ -261,10 +277,17 @@ margin-top: 12rem;
 }
 
 #redes{
-    margin-top: 10rem;
+    padding-top: 10rem;
     background-color: #331D2C;
     width: 100%;
     color: #EFE1D1;
+    
+}
+
+#redes ul, #redes h2{
+    display: flex;
+    justify-content: center;
+    
 }
 
 a.button {
@@ -294,7 +317,25 @@ div .animate{
 
 #blog h2{
     text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
 }
+
+.card-blog {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card-blog:hover {
+    box-shadow: 0 8px 16px 0 #3F2E3E;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
 
 #redes{
     margin-top: 4rem;
@@ -346,4 +387,104 @@ div .animate{
     background-color: #141414;
     height: 100%;
    
+  }
+
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#A78295; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+  .btn{
+    background-color: #3F2E3E;
+    color: #EFE1D1;
+    border-radius: 25px;
+  }
+  .btn:hover {
+    opacity: 50%;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #EFE1D1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #A78295;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #331D2C;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  #serv{
+    display: block;
+    justify-content: center;
+  }
+
+  #serv #contenedor-serv{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #serv #title-serv{
+    justify-content: center;
+    text-align: center;
   }

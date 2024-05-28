@@ -10,13 +10,13 @@
     <script src="https://kit.fontawesome.com/3aca5160cc.js" crossorigin="anonymous"></script>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg justify-content-center">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Nebula</a>
+          <a class="navbar-brand justify-content-center" href="#">Nebula</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class=" nav-link"  href="#parallax">Home</a>
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#cartaNatal">Astrología</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#serv">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#blog">Blog</a>
@@ -42,56 +42,136 @@
       
 </header>
 <body>   
-  <section class="parallax">
-    <img id="luna" src="../img/luna.png" alt="">
-    <img id="montania" src="../img/montania.png.png" alt="">
-    <img id="nubes" src="../img/Nubes.png" alt="">
-    <h2 id="title" class="font-title"> Nebula </h2>
-    <img id="onda" src="../img/Ondaoscura.png" alt="">
-  </section>
+  <div>
 
-<div class="sec2">
-  <div class="contenedorPrincipal">
-    <div id="title2">
-      <h1 id="animate" class="font-title">PROCESO DE TRANSFORMACIÓN PERSONAL</h1>
-    </div>
-    <p>La astrología nos guía hacia un trabajo profundo y personal de encontrarnos con nuestra conciencia. </p>
-    <a href="#contacto" class="button">Reserva tu consulta</a>
+  
+ 
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div id="contenedor-parallax">
+    <section class="parallax col-lg-12 col-md-12 col-sm-4">
+      <img class="img-fluid" id="luna" src="../img/luna.png" alt="">
+      <img class="img-fluid" id="montania" src="../img/montania.png.png" alt="">
+      <img class="img-fluid" id="nubes" src="../img/Nubes.png" alt="">
+      <h2 class="img-fluid" id="title" class="font-title"> Nebula </h2>
+      <img class="img-fluid" id="onda" src="../img/Ondaoscura.png" alt="">
+    </section>
   </div>
-   
-    <div id="sec3">
-      <div class="contenedorImg">
-        <img src="../img/imagen1.jpg" alt="">
+
+
+  <div class="sec2 p-4 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="display: flex;  align-content: center;">
+    <div class="row g-3">
+      <div id="title2" class="col-md-6 col-12">
+        <h1 id="animate" class="font-title">PROCESO DE TRANSFORMACIÓN PERSONAL</h1>
       </div>
+      <div class="col-12">
+        <p class="color3">La astrología es una herramienta de autodescubrimiento que nos guía hacia un trabajo profundo y personal de encontrarnos con nuestra conciencia desde otra perspecitva. </p>
+      </div>
+      <div class="col-lg-10">
+        <a href="#contacto" class="button">Reserva tu consulta</a>
+      </div>
+    </div>
+     
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12 col-12 contenedorImg ">
+            <img class="img-fluid" src="../img/imagen1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="img-fluid col-lg-12 col-md-12 col-sm-12 col-12" id="ondaOscura"></div>
+
+  <div style="display: flex; justify-content: center;  " class="col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="row">
+      <div  class=" col-lg-12 col-md-12 col-sm-12 col-12">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class=" p-4  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="display: flex;" >
+        <h3 class="font-title" style="text-align: center; margin-top: 10rem; flex-wrap: wrap;">"La astrología es un lenguaje, y si lo entiendes, las estrellas te hablan. Dane Rudhyar"</h3>
+      </div>
+    </div>
+ 
+  </div>
+ 
+
+<div id="cartaNatal" class="p-4 col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="row">
+    <div class="col-12 color3">
+      <h2 class="font-title">¿Cuál es tu superpoder?</h2>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-8">
+      <p class="color3">La carta natal es una representación gráfica del sistema solar respecto a un lugar específico en la tierra. </p>
+      <p class="color3">Nos muestra el modo en el que nace alguien en un tiempo y espacio. Nos sirve de guía sobre el tipo de camino de vida que tendremos por delante.</p>
     </div>
   </div>
   
-  <div id="ondaOscura"></div>
-  <section class="sec4">
-    <h4>"Ingrese Frase aqui"</h4>
-  </section>
 
-<div id="cartaNatal">
-  <div class="color3">
-    <h2 class="font-title">¿Cuál es tu superpoder?</h2>
-    <p>La carta natal es una representación gráfica del sistema solar respecto a un lugar específico en la tierra. </p>
-    <p>Nos muestra el modo en el que nace alguien en un tiempo y espacio. Nos sirve de <p>guía</p> sobre el tipo de camino de vida que tendremos por delante.</p>
-  </div>
-  <div id="imgSec5">
-    <div >
-    </div>
-  </div>
+
 </div> 
-<div class="contenedorClaro">
-  <!-- <img id="ondaClara" src="../img/Ondaclara.png" alt=""> -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="row">
+    <div class="img-fluid contenedorClaro">
+      <!-- <img id="ondaClara" src="../img/Ondaclara.png" alt=""> -->
+    </div>
+  
+  </div>
 </div>
 
 
+
+
     <!-- Servicios -->
-    <div id="servicios">
-     <img src="../img/servicio.png" alt="">
-     <img src="../img/Libros.png" alt="">
-     <img src="../img/Carta.png" alt="">
+    <div id="serv" class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <div id="title-serv" class="row">
+        <h2 class="font-title">Servicios</h2>
+      </div>
+      <div class="row" id="contenedor-serv">
+        <div class="card flip-card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5 class="card-title">Carta Natal</h5>
+              </div>
+                <div class="flip-card-back">
+                  <p class="card-text">La carta natal es un fotograma del cielo en el momento del nacimiento.</p>
+                  <p class="card-text">Descubrí tu viaje de vida.</p>
+                  <a href="#" class="card-link">Ver más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card flip-card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5 class="card-title">Revolución Solar</h5>
+              </div>
+                <div class="flip-card-back">
+                  <p class="card-text">Descubrí los desafíos de tu año a partir de la fecha de tu cumpleaños.</p>
+                  <a href="#" class="card-link">Ver más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card flip-card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5 class="card-title">Consulta al Tarot</h5>
+              </div>
+                <div class="flip-card-back">
+                  <p class="card-text">Vení con tu pregunta y descubrí el mensaje que tiene el tarot para vos</p>
+                  <a href="#" class="card-link">Ver más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
  
     </div>
     <!-- Testimonios -->
@@ -100,17 +180,21 @@
     </div> -->
 
     <!-- Ultimos Articulos -->
-    <div id="blog">
-      <h2 class="font-title">Últimos Artículos</h2>
-      <div class="articulos">
-        <div class="card" style="width: 18rem;">
-          <img src="../img/eyes.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../img/espejo.jpg" class="card-img-top" alt="...">
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="../img/espalda.jpg" class="card-img-top" alt="...">
+    <div id="blog" class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <div class="row g-3">
+        <h2 class="font-title">Últimos Artículos</h2>
+      </div>
+      <div class="row g-3">
+        <div class="articulos col-lg-12 col-md-12 col-sm-12 col-12 ">
+          <div class="card-blog" style="width: 20rem;">
+            <img src="../img/eyes.jpg" class="img-fluid card-img-top" alt="...">
+          </div>
+          <div class="card-blog" style="width: 20rem;">
+            <img src="../img/espejo.jpg" class="img-fluid card-img-top" alt="...">
+          </div>
+          <div class="card-blog" style="width: 20rem;">
+            <img src="../img/blog2.jpg" class="img-fluid card-img-top" alt="...">
+          </div>
         </div>
       </div>
     </div>
@@ -118,11 +202,11 @@
     
     <!-- Formulario de contacto -->
     <div id="contacto">
-      <h2 class="font-title">Sumáte a nuestra comunidad</h2>
-      <p>Recibí promociones y noticias exclusivas</p>
+      <h2 class="font-title color4">Sumáte a nuestra comunidad</h2>
+      <p class="color4" style="font-weight: 600;">Recibí promociones y noticias exclusivas</p>
       <div class="container">
       <div class="form-control">
-        <form class="row g-3">
+        <form name="form-contacto" onsubmit="event.preventDefault(); validaciones();"  class="row g-3">
           <div class="col-md-6">
             <label for="name" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="name">
@@ -136,15 +220,22 @@
             <input type="email" class="form-control" id="mail" placeholder="mail@mail.com">
           </div>
           <div class="col-md-6">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password">
+            <label for="consulta" class="form-label">Consulta</label>
+            <input type="consulta" class="form-control" id="consulta">
           </div>
           <div class="col-12">
             <label for="tel" class="form-label">Teléfono</label>
             <input type="text" class="form-control" id="tel">
           </div>
+          <div class="col-12">
+            <label for="tipo" class="form-label">Tipo Teléfono</label>
+            <select class="form-select" name="tipo" id="tipo">
+              <option value="celu" selected>Celular</option>
+               <option value="tel">Teléfono</option>
+            </select>
+          </div>
          
-          <div class="col-2">
+          <div class="col-3" style="text-align: center;">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="suscribe">
               <label class="form-check-label" for="suscribe">
@@ -152,8 +243,8 @@
               </label>
             </div>
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Suscribirse</button>
+          <div class=" col-lg-10 col-12">
+            <button type="submit" id="boton-submit" onclick="validaciones()" class="btn">Suscribirse</button>
           </div>
         </form>
       </div>
@@ -161,19 +252,27 @@
     </div>
 
     <!-- Seguinos -->
-    <div id="redes">
-      <h2 class="font-title">¡Seguinos!</h2>
-      <ul>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-      </ul>
+    <div id="redes" class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <div class="row">
+        <h2 class="font-title">¡Seguinos!</h2>
+      </div>
+      <div class="row">
+        <ul>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        </ul>
+      </div>
+    
     </div>
+
+
+  </div>
 </body>
-<footer class="py-3 my-4">
+<footer class="py-3 ">
   <div id="contenedorFooter">
-    <img src="../img/Logo.png" alt="">
+    <img class="img-fluid" src="../img/Logo.png" alt="">
   </div>
   <div class="" id="footer-container">
         <ul class=" footer-item  nav justify-content-center border-bottom pb-3 mb-3">
@@ -184,7 +283,7 @@
                 <a href="#cartaNatal" class="nav-link px-2 text-body-secondary">Astrología</a>
             </li>
             <li class="nav-item">
-                <a href="#servicios" class="nav-link px-2 text-body-secondary">Servicios</a>
+                <a href="#serv" class="nav-link px-2 text-body-secondary">Servicios</a>
             </li>
             <li class="nav-item">
                 <a href="#blog" class="nav-link px-2 text-body-secondary">Blog</a>
@@ -199,3 +298,4 @@
 </html>
 
 <script src="index.js"></script>
+<script src="validaciones.js"></script>
