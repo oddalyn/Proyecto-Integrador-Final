@@ -1,5 +1,5 @@
 
-let title = document.getElementById("title")
+let title = document.getElementById("title-nebula")
 let nubes = document.getElementById("nubes")
 let montania = document.getElementById("montania")
 let onda = document.getElementById("onda")
